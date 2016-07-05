@@ -2,6 +2,6 @@
 
 > ##clone && install##
 
-  excute commads in bash :
+>  excute commads in bash :
   
-  git clone https://github.com/Greensoon/green.git
+>  git clone https://github.com/Greensoon/green.git
