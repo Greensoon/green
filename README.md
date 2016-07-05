@@ -1,6 +1,6 @@
 # this is a fis tpl source project
 
-1> #clone && install
+> ##clone && install##
 
   excute commads in bash :
   
