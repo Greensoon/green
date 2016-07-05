@@ -1,7 +1,7 @@
 # this is a fis tpl source project
 
-> ##clone && install##
+> clone && install
 
->  excute commads in bash :
+>>  excute commads in bash :
   
->  git clone https://github.com/Greensoon/green.git
+>>  git clone https://github.com/Greensoon/green.git
