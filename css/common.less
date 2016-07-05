@@ -1,0 +1,193 @@
+html{
+  font-size: 40px;
+}
+
+.fl{
+  float:left;
+}
+
+.cf:before,.cf:after{
+  display:table;
+  content: '';
+}
+
+.cf:after{
+  clear:both;
+}
+.text-center{text-align: center;}
+.generator-font-size(@n,@i:1) when(@i=<@n){
+  @fs : @i*2;
+
+  .fs@{fs}{
+    font-size : @fs/40rem;
+  }
+
+  .generator-font-size(@n,(@i+1));
+}
+
+.generator-font-size(25,2);
+
+.mgn-fu(@n,@i:1) when(@i=<@n){
+  @fs : @i*2;
+
+  .fumg-fs@{fs}{
+    margin-top : -@fs/40rem;
+  }
+
+  .mgn-fu(@n,(@i+1));
+}
+
+.mgn-fu(10,6);
+
+//背景颜色
+@body-bg: #20bcce;
+
+//边框颜色 和背景颜色保持一致 可以使最下面的div底部边框不用处理
+@border-color:@body-bg;
+
+//文本颜色1 较重偏黑
+@text-color1: #333;
+
+//文本颜色2 偏灰
+@text-color2: #999;
+
+//醒目颜色1
+@xm-color1  : @border-color;
+
+@xm-color2: orange;
+
+/**
+*item类和line的区别
+*
+* item类主要用于表单的label 和 input，成组出现
+*
+* line类主要控制内部的left 和 right，保持在统一水平高度
+*/
+
+//item公用类默认高度
+@item-height: 40/40rem;
+
+//line公用类默认高度
+@line-height: @item-height;
+
+//头部高度 指带返回按钮的标题栏头部
+@head-height: 50/40rem;
+
+//头部颜色 同上
+@head-bg    : blue;
+
+//line类的上外边距默认值
+@line-mt    : 10/40rem;
+
+//line类的下外边距默认值
+@line-mb    : @line-mt;
+
+//list类的默认外边距
+@list-margin:10/40rem;
+
+//公用文本颜色1 较黑
+.text-color1{color: @text-color1;
+  >*{
+    color: @text-color1;
+  }
+}
+
+//公用文本颜色2 较灰
+.text-color2{color: @text-color2;
+  >*{
+    color: @text-color2;
+  }
+}
+
+//白色背景
+.white-bg{background-color:#fff;}
+
+//白色文字
+.white-color{color: #FFF}
+
+//设置body默认颜色
+body{background: @body-bg;}
+
+
+.head{
+  height: @head-height;
+  line-height: @head-height;
+  text-align: center;
+  background-color: @head-bg;
+  position: relative;
+  .white-color;
+}
+
+.back{
+  position: absolute;
+  left: 10/40rem;
+  .white-color;
+}
+
+.line{
+
+  margin: @line-mt @list-margin 0;
+  .white-bg;
+  .right{
+    float: right;
+  }
+
+}
+.line:first-child{
+  padding-top: @line-mt;
+}
+
+
+//item 公用类
+.item{
+  height: @item-height;
+  line-height: @item-height;
+  border-bottom: 1px solid @border-color;
+  padding-left: 10/40rem;
+  position: relative;
+
+  >input{
+    position: absolute;
+    height: @item-height;
+    right: 0;
+    left: 0;
+    width: 100%;
+    top: 0;
+    text-indent: 80/40rem;
+  }
+  .label{
+    position: absolute;
+    z-index: 2;
+  }
+}
+
+@sub-btn-height: 30/40rem;
+@sub-btn-bg: blue;
+.sub-btn{
+  margin-top: 40/40rem;
+  width: 90%;
+  height: @sub-btn-height;
+  text-align: center;
+  line-height: @sub-btn-height;
+  display: block;
+  background-color: @sub-btn-bg;
+  margin-left: 5%;
+  .white-color;
+
+}
+
+.from,.to{
+  display:inline;
+}
+
+.kefu-tel{
+  position:absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 20/40rem;
+  .white-color;
+}
+
+//醒目类
+.xm1{color: @xm-color1;}
+.xm2{color: @xm-color2;}

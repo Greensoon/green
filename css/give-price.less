@@ -1,0 +1,47 @@
+@import url('./reset.less');
+@import url('./common.less');
+
+@sub-btn-height : 40/40rem;
+
+.give-price{
+  .group{
+    .white-bg;
+    .item{
+      textarea{
+        margin-left: 70/40rem;
+        margin-top: 15/40rem;
+        border: 0;
+        resize: none;
+        background-color: #ddd;
+      }
+      .radio-group{
+
+        position: relative;
+        height: 100%;
+        margin-left: 70/40rem;
+        .radio-item{
+          display: inline-block;
+          position: relative;
+          width: 60/40rem;
+          margin-right: 40/40rem;
+          >input[type="radio"]{
+            width: 20/40rem;
+            height: 20/40rem;
+            position: absolute;
+            top: 8/40rem;
+            right: 0;
+          }
+        }
+      }
+    }
+
+    .item-auto-height{
+      height: auto;
+    }
+  }
+
+  .sub-btn{
+    position: absolute;
+    bottom: 20/40rem;
+  }
+}

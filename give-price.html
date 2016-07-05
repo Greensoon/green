@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="import" href="_inline-meta.html?__inline">
+    <link rel="stylesheet" href="css/give-price.less">
+    <title>报价</title>
+  </head>
+  <body>
+
+    <div class="give-price fs14">
+
+      <div class="group">
+        <div class="item">
+          <div class="label">参考里程</div>
+          <input type="text" class="val">
+        </div>
+
+        <div class="item">
+          <div class="label">车辆要求</div>
+          <input type="text" class="val" >
+          <div class="label-desc">拼车</div>
+        </div>
+
+        <div class="item">
+          <div class="label">货物信息</div>
+          <input type="text" class="val" >
+        </div>
+
+        <div class="item">
+          <div class="label">报价方式</div>
+          <div class="radio-group">
+            <div class="radio-item">
+              整车
+              <input type="radio" value="1" name="bjtype">
+            </div>
+            <div class="radio-item">
+              按吨
+              <input type="radio" value="2" name="bjtype">
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="label">货物单价</div>
+          <input type="text" placeholder="请输入货物单价">
+        </div>
+
+        <div class="item">
+          <div class="label">报价总额</div>
+          <input type="text" placeholder="多少钱元">
+        </div>
+
+        <div class="item">
+          <div class="label">报价时效</div>
+          <input type="text" placeholder="4小时(时效要求)">
+        </div>
+
+        <div class="item item-auto-height">
+          <div class="label">报价说明</div>
+          <textarea name="name" rows="8" cols="35" placeholder="请填写报价说明"></textarea>
+        </div>
+      </div>
+
+      <a href="#" class="sub-btn">完成</a>
+
+    </div>
+
+
+  </body>
+</html>

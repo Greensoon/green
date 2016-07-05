@@ -1,0 +1,67 @@
+@import url('reset.less');
+@import url('common.less');
+@import url('nav.less');
+
+@tn-height : 30/40rem;
+@btn-height : 40/40rem;
+
+.orders{
+  .top-nav{
+    height: @tn-height;
+    .white-bg;
+    .nav-menus{
+
+      li{
+        width: 25%;
+        line-height: @tn-height;
+      }
+
+      .active{
+        border-bottom: 2px solid @border-color;
+      }
+    }
+  }
+
+  .empty{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: @tn-height;
+    bottom: @nav-height;
+    padding-top: 50%;
+
+  }
+
+  .list{
+    .order-list{
+      .white-bg;
+      .pb10{
+        padding-bottom: 10/40rem;
+      }
+      li{
+
+        .line{
+          .btn{
+            display: block;
+            height: @btn-height;
+            line-height: @btn-height;
+          }
+        }
+        .btns{
+          width: 100%;
+          margin-left: -@list-margin;
+          padding-left: @list-margin;
+          .btn{
+            width: 50%;
+            text-align: center;
+            border-top: 1px solid @border-color;
+            border-left: 1px solid @border-color;
+            margin-left: -1/40rem;
+          }
+        }
+      }
+
+    }
+  }
+
+}

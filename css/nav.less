@@ -1,0 +1,37 @@
+@nav-active-color  : #20bcce;
+@nav-color         : #999;
+@nav-height        : 50/40rem;
+.white-bg{
+  background-color: #fff;
+}
+.active{
+  color: @nav-active-color!important;
+  >a{
+    color: @nav-active-color!important;
+  }
+}
+
+
+.nav-wrap{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width:100%;
+  height: @nav-height;
+  .white-bg;
+  .nav-list{
+    li{
+      height: 100%;
+      width: 33.33333%;
+      a{
+        line-height: @nav-height;
+        display: block;
+        color: @nav-color;
+        padding-top: 15/40rem;
+      }
+
+
+    }
+
+  }
+}
