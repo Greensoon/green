@@ -8,6 +8,10 @@ fis.match('*.{js,css}', {
 // fis.match('*.{css,less}',{
 //   release : '/$0'
 // })
+
+fis.match('_*.*',{
+  release : false
+})
 fis.match('*.less', {
   parser: fis.plugin('less'),
   // postprocessor: fis.plugin("autoprefixer", {

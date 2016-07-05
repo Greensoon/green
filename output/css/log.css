@@ -1,0 +1,392 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+html {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+td,
+th {
+  font-weight: 400;
+  vertical-align: middle;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+a img {
+  border: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "STHeiti", "微软雅黑", "Microsoft YaHei", sans-serif;
+}
+body {
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+button,
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=text],
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #dddddd;
+}
+input {
+  border: 0;
+  outline: none;
+}
+html {
+  font-size: 40px;
+}
+.fl {
+  float: left;
+}
+.cf:before,
+.cf:after {
+  display: table;
+  content: '';
+}
+.cf:after {
+  clear: both;
+}
+.text-center {
+  text-align: center;
+}
+.fs4 {
+  font-size: 0.1rem;
+}
+.fs6 {
+  font-size: 0.15rem;
+}
+.fs8 {
+  font-size: 0.2rem;
+}
+.fs10 {
+  font-size: 0.25rem;
+}
+.fs12 {
+  font-size: 0.3rem;
+}
+.fs14 {
+  font-size: 0.35rem;
+}
+.fs16 {
+  font-size: 0.4rem;
+}
+.fs18 {
+  font-size: 0.45rem;
+}
+.fs20 {
+  font-size: 0.5rem;
+}
+.fs22 {
+  font-size: 0.55rem;
+}
+.fs24 {
+  font-size: 0.6rem;
+}
+.fs26 {
+  font-size: 0.65rem;
+}
+.fs28 {
+  font-size: 0.7rem;
+}
+.fs30 {
+  font-size: 0.75rem;
+}
+.fs32 {
+  font-size: 0.8rem;
+}
+.fs34 {
+  font-size: 0.85rem;
+}
+.fs36 {
+  font-size: 0.9rem;
+}
+.fs38 {
+  font-size: 0.95rem;
+}
+.fs40 {
+  font-size: 1rem;
+}
+.fs42 {
+  font-size: 1.05rem;
+}
+.fs44 {
+  font-size: 1.1rem;
+}
+.fs46 {
+  font-size: 1.15rem;
+}
+.fs48 {
+  font-size: 1.2rem;
+}
+.fs50 {
+  font-size: 1.25rem;
+}
+.fumg-fs12 {
+  margin-top: -0.3rem;
+}
+.fumg-fs14 {
+  margin-top: -0.35rem;
+}
+.fumg-fs16 {
+  margin-top: -0.4rem;
+}
+.fumg-fs18 {
+  margin-top: -0.45rem;
+}
+.fumg-fs20 {
+  margin-top: -0.5rem;
+}
+/**
+*item类和line的区别
+*
+* item类主要用于表单的label 和 input，成组出现
+*
+* line类主要控制内部的left 和 right，保持在统一水平高度
+*/
+.text-color1 {
+  color: #333333;
+}
+.text-color1 > * {
+  color: #333333;
+}
+.text-color2 {
+  color: #999999;
+}
+.text-color2 > * {
+  color: #999999;
+}
+.white-bg {
+  background-color: #fff;
+}
+.white-color {
+  color: #ffffff;
+}
+body {
+  background: #20bcce;
+}
+.head {
+  height: 1.25rem;
+  line-height: 1.25rem;
+  text-align: center;
+  background-color: #0000ff;
+  position: relative;
+  color: #ffffff;
+}
+.back {
+  position: absolute;
+  left: 0.25rem;
+  color: #ffffff;
+}
+.line {
+  margin: 0.25rem 0.25rem 0;
+  background-color: #fff;
+}
+.line .right {
+  float: right;
+}
+.line:first-child {
+  padding-top: 0.25rem;
+}
+.item {
+  height: 1rem;
+  line-height: 1rem;
+  border-bottom: 1px solid #20bcce;
+  padding-left: 0.25rem;
+  position: relative;
+}
+.item > input {
+  position: absolute;
+  height: 1rem;
+  right: 0;
+  left: 0;
+  width: 100%;
+  top: 0;
+  text-indent: 2rem;
+}
+.item .label {
+  position: absolute;
+  z-index: 2;
+}
+.sub-btn {
+  margin-top: 1rem;
+  width: 90%;
+  height: 1rem;
+  text-align: center;
+  line-height: 1rem;
+  display: block;
+  background-color: #0000ff;
+  margin-left: 5%;
+  color: #ffffff;
+}
+.from,
+.to {
+  display: inline;
+}
+.kefu-tel {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0.5rem;
+  color: #ffffff;
+}
+.xm1 {
+  color: #20bcce;
+}
+.xm2 {
+  color: #ffa500;
+}
+.log .logo {
+  width: 100%;
+  height: 3.75rem;
+  font-size: 1.25rem;
+  text-align: center;
+  line-height: 3.75rem;
+}
+.log .kefu-tel {
+  position: relative;
+  bottom: 0;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+.log .sub-btn {
+  margin-top: 0;
+  background-color: #20bcce;
+}
+.log .active {
+  background-color: #0000ff;
+}
