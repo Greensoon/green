@@ -12,6 +12,14 @@ fis.match('*.{js,css}', {
 fis.match('_*.*',{
   release : false
 })
+
+fis.match('*.{css,less}',{
+  release : false
+})
+
+fis.match('style.less',{
+  release : true
+})
 fis.match('*.less', {
   parser: fis.plugin('less'),
   // postprocessor: fis.plugin("autoprefixer", {
