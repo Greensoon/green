@@ -37,7 +37,7 @@ html{
   .mgn-fu(@n,(@i+1));
 }
 
-.mgn-fu(10,6);
+.mgn-fu(20,6);
 
 //背景颜色
 @body-bg: #20bcce;
@@ -155,10 +155,27 @@ body{background: @body-bg;}
     top: 0;
     text-indent: 80/40rem;
   }
+
+  .val{
+    position: absolute;
+    height: @item-height;
+    right: 0;
+    left: 0;
+    width: 100%;
+    top: 0;
+    text-indent: 80/40rem;
+  }
   .label{
     position: absolute;
     z-index: 2;
   }
+}
+
+.desc-title{
+  margin-left: 20/40rem;
+  font-size: 12/40rem;
+  height: 1rem;
+  line-height: 1rem;
 }
 
 @sub-btn-height: 30/40rem;
@@ -173,6 +190,21 @@ body{background: @body-bg;}
   background-color: @sub-btn-bg;
   margin-left: 5%;
   .white-color;
+
+}
+
+.sub-btn-fixed{
+  width: 90%;
+  height: @sub-btn-height;
+  text-align: center;
+  line-height: @sub-btn-height;
+  display: block;
+  background-color: @sub-btn-bg;
+  margin-left: 5%;
+  .white-color;
+  position: fixed;
+  bottom: 10/40rem;
+
 
 }
 
