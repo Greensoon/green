@@ -1,5 +1,5 @@
 // default settings. fis3 release
-
+fis.hook('relative');
 // Global start
 fis.match('*.{js,css}', {
   // useHash: true
