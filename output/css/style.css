@@ -327,21 +327,30 @@ html {
   color: #ffffff;
 }
 body {
-  background: #20bcce;
+  background: #f9f9f9;
 }
 .head {
+  top: 0;
   height: 1.25rem;
   line-height: 1.25rem;
+  position: fixed;
+  width: 100%;
   text-align: center;
   background-color: #0000ff;
-  position: relative;
-  color: #ffffff;
+  color: #fff;
+  z-index: 1000;
 }
 .back {
   position: absolute;
+  top: 0;
   left: 0.25rem;
   color: #ffffff;
 }
+
+.page-pad-top{
+  padding-top: 1.5rem;
+}
+
 .line {
   margin: 0.25rem 0.25rem 0;
   background-color: #fff;
@@ -483,6 +492,7 @@ body {
 .nav-wrap .nav-list li {
   height: 100%;
   width: 33.33333%;
+  position: relative;
 }
 .nav-wrap .nav-list li a {
   line-height: 1.25rem;
@@ -531,6 +541,14 @@ body {
   font-size: 1.25rem;
   text-align: center;
   line-height: 3.75rem;
+}
+
+.log .item{
+  width: 80%;
+  margin: 0 auto;
+}
+.log .item > input {
+    text-indent: 1.2rem;
 }
 .log .kefu-tel {
   position: relative;
@@ -690,6 +708,39 @@ body {
   background: yellow;
   padding-top: 0.75rem;
 }
+.user-center .group{
+  background: #FFF;
+}
+
+.user-center .item{
+  height: 1rem;
+  line-height:1rem;
+}
+
+.user-center cite{
+  margin-right: 0.25rem;
+
+
+}
+
+.user-center cite:before{
+  font-size: 0.3rem;
+  padding: 0.1rem;
+  background: red;
+  border-radius: 100%;
+  color: #FFF;
+}
+
+.user-center .blue:before{background: blue;}
+.user-center .orange:before{background: orange;}
+.user-center .red:before{background: red;}
+.user-center .icon-camera{
+  position: absolute;
+  right:0;
+  bottom:0;
+  font-size: .5rem;
+}
+
 .user-center .icon-area .icon {
   width: 2.5rem;
   height: 2.5rem;
@@ -704,6 +755,15 @@ body {
 .user-center .icon-area .phone {
   margin-top: 0.125rem;
 }
+
+
+.user-center .icon-dir-right:before{
+  /*position: absolute;
+  right: .5rem;*/
+  float:right;
+  margin-right: 0.25rem;
+}
+
 .priced .list li {
   background-color: #fff;
   padding-bottom: 0.125rem;
@@ -836,4 +896,12 @@ body {
 .order-detail .tip {
   text-align: center;
   margin-top: 0.25rem;
+}
+
+.order-detail .item .item-btn{
+  width: .5rem;
+  height: 1rem;
+  right: 0.25rem;
+  position: absolute;
+  font-size: .5rem;
 }
